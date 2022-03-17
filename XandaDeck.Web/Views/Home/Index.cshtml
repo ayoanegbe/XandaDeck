@@ -1,0 +1,371 @@
+﻿@{
+    ViewData["Title"] = "Home";
+
+    var contact = (Contact)ViewData["contact"];
+}
+
+@using Microsoft.Extensions.Options
+
+@inject IOptions<RecaptchaSettings> GoogleRecap
+
+<section id="section-home" class="slider-element boxed-slider">
+
+    <p class="text-center">Xandadeck is a next-generation digital signage service, born and raised on the Cloud. </p>
+    <p class="text-center">This cloud-based digital signage platform helps you design, create  and schedule easily for your screens from anywhere in the world, using your computer or smartphone, effortlessly.</p>
+
+    <div class="container clearfix">
+        <iframe src="https://www.youtube.com/embed/Qj-rMZ1gWQE" width="500" height="281" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+
+</section>
+
+<!-- Content
+        ============================================= -->
+<section id="content">
+    <div class="content-wrap">
+        <div class="container clearfix">
+
+            <div id="section-features" class="heading-block text-center page-section">
+                <h2>Features</h2>
+                <span>Display your content on screen, in just a few clicks!</span>
+            </div>
+
+            <div class="row justify-content-center col-mb-80  mb-5">
+                <div class="postcontent col-lg-9">
+
+                    <div class="tabs tabs-bordered tabs-alt tabs-tb clearfix" id="tab-1">
+
+                        <ul class="tab-nav">
+                            <li><a href="#tabs-1">ADD ALL YOUR CONTENT</a></li>
+                            <li><a href="#tabs-2">PLUG AND PLAY</a></li>
+                        </ul>
+
+                        <div class="tab-container">
+
+                            <div class="tab-content" id="tabs-1">
+                                <p>Display your content on screen with our screen player in just a few clicks!<br /><br /></p><h5><b>Use and reuse content</b></h5><p>Upload any video or image file type. Use any YouTube video link. Show any web page you want.</p><h5><b>Content adaptation</b></h5><p>Anything you upload is automatically adapted for perfect playback.</p><h5>Security</h5><p>Top-grade encryption, firewall and other security features to make sure your screens stay safe.</p><h5><b>Custom Widgets</b></h5><p>Need a custom dynamic price-board, chart, or something else? Upload and use your own widgets. Or use one of ours!</p>
+                            </div>
+                            <div class="tab-content" id="tabs-2">
+                                <p>Xandabox screen player provides great performance at a reasonable price.<br /><br /></p><h5><b>A breeze to deploy</b></h5><p>Our Xandabox can be installed by anyone, just like a DVD player. Xandabox provides great performance at a reasonable price.</p><h5><b>Use Cable or wireless</b></h5><p>Xandadeck supports Ethernet and Wi-Fi networks, incl. proxies, static IPs and more.</p><h5><b>Hardware Included</b></h5><p>Our Xandabox provides great performance at a reasonable price. Get it for free with an annual pricing plan.</p>
+                            </div>
+                            
+
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="row justify-content-center col-mb-80 mb-5">
+                <div class="col-md-6 col-lg-6 p-5">
+                    <div class="fslider" data-animation="fade" data-pagi="false" data-arrows="false">
+                        <div class="flexslider">
+                            <div class="slider-wrap">
+                                <div class="slide"><img src="~/images/global.png" alt="Slider 1"></div>
+                                <div class="slide"><img src="~/images/global-man.png" alt="Slider 2"></div>
+                                <div class="slide"><img src="~/images/lady-dog.png" alt="Slider 3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="section-benefits" class="col-md-6 col-lg-6">
+                    <div class="feature-box fbox-plain">
+                        <div class="fbox-content">
+                            <h2>Benefits</h2>
+                            <ul>
+                                <li>Push messages from one location in any part of the world to other locations across the world.</li>
+                                <li>Split your screen and display multiple messages at the same time.</li>
+                                <li>Group the branches and customize messages. For instance, what you send to branches in the North may be different from those in the South.</li>
+                                <li>Schedule your broadcast.</li>
+                                <li>Conduct live broadcast to all the branches from one location.</li>
+                                <li>Remotely manage the content of your screen from your desktop, laptop or tablet.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" class="button button-rounded">Get Started</a>
+                </div>
+
+
+            </div>
+
+            @*<div class="divider divider-sm divider-center"><i class="icon-circle"></i></div>*@
+
+            <div id="section-how-it-works" class="heading-block text-center page-section">
+                <h2>HOW IT WORKS</h2>
+                <span>Getting started is literally as easy as 1-2-3!</span>
+            </div>
+
+            <div class="row col-mb-50 mb-5">
+                <div class="col-md-4">
+                    <div class="card center">
+                        <div class="card-header"><img src="~/images/face.png" alt="face"></div>
+                        <div class="card-body center">
+                            <h4 class="card-title ">Create A Free Xandadeck Account</h4>
+                            <p class="card-text">Explore the richness of XandaDeck for free</p>
+                            <div class="clear mb-4"></div>
+                            <a href="#" class="btn btn-danger">GET STARTED</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card center">
+                        <div class="card-header"><img src="~/images/play.png" alt="play"></div>
+                        <div class="card-body">
+                            <h4 class="card-title ">Get Your XandaBox</h4>
+                            <p class="card-text">XandaBox comes at a one-off fee with discount on multiple purchase</p>
+
+                            <a href="#" class="btn btn-danger">GET YOUR XANDABOX</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card center">
+                        <div class="card-header"><img src="~/images/upload.png" alt="upload"></div>
+                        <div class="card-body">
+                            <h4 class="card-title">Upload Your Media And Hit “Apply”</h4>
+                            <p class="card-text">Just upload your images or videos, add them to a show and hit the “apply changes” button. Easy as 1,2,3.</p>
+                            <div class="clear mb-4"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            @*<div class="divider divider-sm divider-center"><i class="icon-circle"></i></div>*@
+
+            <div id="section-pricing" class="heading-block text-center page-section">
+                <h2>Product Plan &amp; Pricing</h2>
+                <span>XandaBox comes at a one-off fee plus. Monthly subscription applies</span>
+            </div>
+
+
+            <div class="row pricing col-mb-30 mb-0 g-0">
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="pricing-box text-center">
+                        <div class="pricing-title text-uppercase title-sm">
+                            <h3>Standard</h3>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="price-unit">₦</span>8,500
+                        </div>
+                        <div class="pricing-features">
+                            <p>
+                                Upload image, Video, Audio, Document Files, Use Live Streams and web pages, Playlists, Solit Screens to zones/regions, Overlays, Scheduling.
+                            </p>
+                        </div>
+                        <div class="pricing-action px-4">
+                            <a href="#" class="btn btn-danger w-100 btn-lg bg-color border-color">Order Now</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="pricing-box text-center">
+                        <div class="pricing-title text-uppercase title-sm">
+                            <h3>Pro</h3>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="price-unit">₦</span>10,500
+                        </div>
+                        <div class="pricing-features">
+                            <p>
+                                Everything in standard plan + Sub Playlists, Tag-based Playlists, Playback reports (Poof of Play), Volumes Schedules.
+                            </p>
+                            <div class="clear mb-4"></div>
+                        </div>
+                        <div class="pricing-action px-4">
+                            <a href="#" class="btn btn-danger w-100 btn-lg">Order Now</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="pricing-box text-center">
+                        <div class="pricing-title text-uppercase title-sm">
+                            <h3>Enterprise</h3>
+                        </div>
+
+                        <div class="pricing-features">
+                            <p>
+                                Everything in PRO + Granular Access Control with Workspaces, Custom User Roles, Single Sign-on (SAML), Login IP & Password Restrictions, Player Secure Lockdown.
+                            </p>
+                            <div class="clear mb-5"></div>
+                            <div class="clear mb-5"></div>
+                        </div>
+                        <div class="pricing-action px-4">
+                            <a href="#" class="btn btn-danger w-100 btn-lg">Order Now</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="row pricing col-mb-30 mb-4 g-0">
+                <div class="col-md-6 col-lg-4 text-center">
+                    <a asp-action="Pricing">Compare Plans</a>
+                </div>
+                <div class="col-md-6 col-lg-4 text-center">
+                    <a asp-action="Pricing">Compare Plans</a>
+                </div>
+                <div class="col-md-6 col-lg-4 text-center">
+                    <a asp-action="Pricing">Compare Plans</a>
+                </div>
+            </div>
+
+
+            @*<div class="divider divider-sm divider-center"><i class="icon-circle"></i></div>*@
+
+            <div id="section-contact" class="heading-block text-center page-section">
+                <h2>Contact Us</h2>
+                <span>Use the form below to make an inquiry. One of our representatives will get in touch with you as soon as possible.</span>
+            </div>
+
+            <div class="row align-items-stretch col-mb-50 mb-0">
+
+                <div class="col-md-4 col-lg-4">
+                    <div class="title-block mb-3">
+                        <h4 class="mt-0">Phone Number</h4>
+                        <a href="#">+234 701 930 6888</a>
+                    </div>
+                    <div class="title-block mb-3">
+                        <h4 class="mt-0">Email Address</h4>
+                        <a href="#">sales@xandatechnologies.com</a><br>
+                        <a href="#">support@xandatechnologies.com</a>
+                    </div>
+                    <div class="title-block mb-3">
+                        <h4 class="mt-0">Find us on Social Media</h4>
+                        <a href="https://web.facebook.com/Xanda-Technologies-108017354300135/" target="_blank" class="social-icon si-borderless si-text-color si-facebook">
+                            <i class="icon-facebook"></i>
+                            <i class="icon-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/Xanda_Tech" target="_blank" class="social-icon si-borderless si-text-color si-twitter">
+                            <i class="icon-twitter"></i>
+                            <i class="icon-twitter"></i>
+                        </a>
+                        <a href="https://ng.linkedin.com/company/xandatechnologies" target="_blank" class="social-icon si-borderless si-text-color si-linkedin">
+                            <i class="icon-linkedin"></i>
+                            <i class="icon-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/xandatechnologies/" target="_blank" class="social-icon si-borderless si-text-color si-instagram">
+                            <i class="icon-instagram"></i>
+                            <i class="icon-instagram"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Contact Form
+        ============================================= -->
+                <div class="col-md-8 col-lg-8">
+
+                    <div class="form-widget">
+
+                        <div class="form-result"></div>
+
+                        <form asp-action="Contact" class="mb-0" id="template-contactform" name="template-contactform" method="post">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <input id="input-token" type="text" asp-for="@contact.Token" hidden />
+                            <div class="form-process">
+                                <div class="css3-spinner">
+                                    <div class="css3-spinner-scaler"></div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4 form-group">
+                                    <label for="template-contactform-name">Full Names <small style="color:red">*</small></label>
+                                    <input type="text" id="template-contactform-name" asp-for="@contact.FullName" class="sm-form-control required" required />
+                                </div>
+
+                                <div class="col-md-4 form-group">
+                                    <label for="template-contactform-email">Email Address <small style="color:red">*</small></label>
+                                    <input type="email" id="template-contactform-email" asp-for="@contact.EmailAddress" class="required email sm-form-control" required />
+                                </div>
+
+                                <div class="col-md-4 form-group">
+                                    <label for="template-contactform-phone">Phone Number <small style="color:red">*</small></label>
+                                    <input type="text" id="template-contactform-phone" asp-for="@contact.PhoneNumber" class="sm-form-control required" required />
+                                </div>
+
+                                <div class="w-100"></div>
+
+                                <div class="col-md-8 form-group">
+                                    <label for="template-contactform-subject">Company Name  <small style="color:red">*</small></label>
+                                    <input type="text" id="template-contactform-subject" asp-for="@contact.CompanyName" class="required sm-form-control" />
+                                </div>
+
+                                <div class="col-md-4 form-group">
+                                    <label for="template-contactform-service">Inquiry Type <small style="color:red">*</small></label>
+                                    <div class="vl">
+                                        <select id="selectBooth" asp-for="@contact.InquiryType" asp-items="@Html.GetEnumSelectList<InquiryType>()" required>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="w-100"></div>
+
+                                <div class="col-md-8 form-group">
+                                    <label for="template-contactform-subject">Address <small style="color:red">*</small></label>
+                                    <input type="text" id="template-contactform-subject" asp-for="@contact.Address" class="required sm-form-control" />
+                                </div>
+
+                                <div class="col-md-4 form-group">
+                                    <label for="template-contactform-service">Number of Locations <small style="color:red">*</small></label>
+                                    <input type="text" id="template-contactform-subject" asp-for="@contact.NumberOfLocations" class="required sm-form-control" />
+                                </div>
+
+                                <div class="w-100"></div>
+
+                                <div class="col-12 form-group">
+                                    <label for="template-contactform-message">Message <small style="color:red">*</small></label>
+                                    <textarea class="required sm-form-control" id="template-contactform-message" asp-for="@contact.Message" rows="6" cols="30"></textarea>
+                                </div>
+
+                                <div class="col-12 form-group">
+                                    <button class="button button-3d m-0" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Send Message</button>
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div><!-- Contact Form End -->
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+</section><!-- #content end -->
+
+@section Scripts{
+
+    <partial name="_ValidationScriptsPartial" />
+
+    <script src="https://www.google.com/recaptcha/api.js?render=@GoogleRecap.Value.SiteKey"></script>
+    <script>
+
+        grecaptcha.ready(function () {
+            grecaptcha.execute('@GoogleRecap.Value.SiteKey', { action: 'index' }).then(function (token) {
+                //console.log(token);
+                $('#input-token').val(token);
+            });
+        });
+
+    </script>
+}

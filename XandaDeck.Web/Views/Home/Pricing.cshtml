@@ -1,0 +1,699 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<section id="content">
+    <div class="content-wrap">
+        <div class="container clearfix">
+
+            @*<div id="section-features" class="heading-block text-center page-section">
+
+            </div>*@
+
+            <div class="row pricing col-mb-30 mb-4">
+                <table class="table table-hover table-comparison mb-0">
+                    <thead>
+                        <tr>
+                            <th>Features</th>
+                            <th>Standard</th>
+                            <th>Pro</th>
+                            <th>Enterprise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="font-size:x-large"><strong>Add Images</strong></td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Upload &amp; Display Images (any format)</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Thousands of Free Stock Images to Use</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>In-app Image Editor</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td style="font-size:x-large"><strong>Add Videos</strong></td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Video Files</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>YouTube &amp; YouTube Live Stream Video</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Live Video Streaming (incl. IPTV, LAN streams)</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+
+                        <tr>
+                            <td>Rotate & Crop Videos</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>HDMI-in Support</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td style="font-size:x-large">Add Web Pages</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Display Web Pages (Public or Internal)</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Form-based Authentication</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Webpage Automation &amp; Custom JS Implementation</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Configurable Browser Zoom In/Out</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Auto-Refresh Webpage</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Show Fallback Image If Webpage Is Unreachable</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Preload Webpage for Instant Transitions</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td style="font-size:x-large">Add Audio Files</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Upload &amp; Playback Audio Files (any format)</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Use Audio from YouTube Videos &amp; YouTube Live</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Live Audio Streaming (incl. Internet Streams, LAN streams)</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td style="font-size:x-large">Add Documents</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Upload &amp; Display PDF Files</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Upload &amp; Display Powerpoint Files (.ppt & .pptx)</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Upload &amp; Display Excel Files (.xls & .xlsx)</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Upload &amp; Display Word Files (.doc & .docx)</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Set Display Time for Each Page</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Upload PPT as Video (w/ Animations &amp; Transitions)</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td style="font-size:x-large">Screen Layouts &amp; Templates</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Screen Layouts with Multiple Zones of Media</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Free Layout Templates for Any Industry</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Add or Change Media, Playlists, Widgets, Texts and Shapes</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Build Custom Layouts with the Design You Need</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Overlay Media / Layer Media</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Layout Previewing in Browser</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td style="font-size:x-large">Playback &amp; Safety</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Fullscreen Playback</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Portrait (Vertical) and Landscape (Horizontal) Screen Orientation</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Supports Any Screen Resolution (incl.1080p and 4K)</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Supports Custom Resolutions and LED Panels/Billboards</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Broadcast Emergency Alerts On Screens</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>CAP Support for Emergency Alerts (Q1-2020)</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Video Wall Support (using 1 Player per Screen)</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td style="font-size:x-large">Media Management &amp; Playlists</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Media Playlists with Drag-and-Drop Editor</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Media Previewing</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Media Expiration</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Instant Transitions (no black screens between Media)</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Sub-Playlists</td>
+                            <td><i class="icon-remove"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Media Tags</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Tag-Based Playlists</td>
+                            <td><i class="icon-remove"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td style="font-size:x-large">Scheduling</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Content Scheduling</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Schedule Repeating Events (Daily, Weekly, Monthly, etc)</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Screen On/Off Hours (over HDMI)</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>User-friendly Schedule Editor</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Schedule Download Hours (to use off-peak bandwidth)</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Volume Level Scheduling (for noisy peak-hours)</td>
+                            <td><i class="icon-remove"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td style="font-size:x-large">Widgets</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>RSS Ticker (scrolling text)</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Current Weather & Hourly or Daily Forecasts</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Clocks, Dates, Quotes, QR Codes, Countdowns</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Calendars (Google, more to come)</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Data Dashboards and Integrations with 20+ Services, like Google Analytics</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Upload Your Own Custom Widgets</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td style="font-size:x-large">Networking</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Wired Ethernet Support</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Wireless Network (WiFi) Support (on-board or dongle*)</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>3G/4G/LTE USB Dongle Support</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Supports DHCP or Static (IP, Gateway and DNS Server)</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Supports HTTP Proxy with Authentication</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Supports Custom NTP Server</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Deploy Custom Certificates to Players</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Keyboard-free Installation, Plug-n-Play</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td style="font-size:x-large">Security</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Multiple Users in One Account</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>2-Factor Authentication</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Standard User Roles</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Custom User Roles</td>
+                            <td><i class="icon-remove"></i></td>
+                            <td><i class="icon-remove"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Granular Access Control with Workspaces for Restricted Access to Content and Screens</td>
+                            <td><i class="icon-remove"></i></td>
+                            <td><i class="icon-remove"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Single Sign-On (SSO) Using SAML</td>
+                            <td><i class="icon-remove"></i></td>
+                            <td><i class="icon-remove"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Custom Password Policy</td>
+                            <td><i class="icon-remove"></i></td>
+                            <td><i class="icon-remove"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Security Lockdown for Players</td>
+                            <td><i class="icon-remove"></i></td>
+                            <td><i class="icon-remove"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>User IP Address Whitelist</td>
+                            <td><i class="icon-remove"></i></td>
+                            <td><i class="icon-remove"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Audit Logs</td>
+                            <td><i class="icon-remove"></i></td>
+                            <td><i class="icon-remove"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Player Storage Encryption</td>
+                            <td><i class="icon-remove"></i></td>
+                            <td><i class="icon-remove"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td style="font-size:x-large">Management &amp; Monitoring</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Complete Remote Management Through the Web</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Playback Reports (Proof of Play)</td>
+                            <td><i class="icon-remove"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Player Content Screenshots</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>In-Map Screen Visualization</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Tag-based Screen Grouping</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Different Timezone per Player</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Automated Software Upgrades</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Command-line Access (SSH)</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Email Notifications on Player Online/Offline</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>HTTP REST API</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td style="font-size:x-large">Service Limits</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Local Storage of Content</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Offline Playback</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Unlimited Cloud Storage</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Unlimited Cloud Bandwidth</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Unlimited Users in an Account</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Unlimited Capacity (supporting thousands of Players)</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td style="font-size:x-large">Player Hardware</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>2GB XANDA BOX</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Upgrade Available to 4GB XANDA BOX</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Available Storage for Media</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Worldwide Warranty</td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                            <td><i class="icon-ok" style="color:red"></i></td>
+                        </tr>
+                        @*<tr>
+            <td>&nbsp;</td>
+            <td><a href="#" class="btn btn-secondary">Sign Up</a></td>
+            <td><a href="#" class="btn btn-secondary">Sign Up</a></td>
+            <td><a href="#" class="btn btn-secondary">Sign Up</a></td>
+        </tr>*@
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>

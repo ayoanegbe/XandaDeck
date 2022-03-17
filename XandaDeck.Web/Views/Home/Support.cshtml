@@ -1,0 +1,94 @@
+﻿@model SupportTicket
+
+@{
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<section id="content">
+    <div class="content-wrap">
+        <div class="container clearfix">
+
+            <div id="section-features" class="heading-block text-center page-section">
+                <h2>SUBMIT A TICKET</h2>
+                <span>Kindly fill the form below to request for support or make a complaint.</span>
+            </div>
+
+            <div class="clearfix">
+                <div class="form-widget">
+
+                    <div class="form-result"></div>
+
+                    <form asp-action="Contact" class="mb-0" id="template-contactform" name="template-contactform" method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <input id="input-token" type="text" asp-for="Token" hidden />
+                        <div class="form-process">
+                            <div class="css3-spinner">
+                                <div class="css3-spinner-scaler"></div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <label for="template-contactform-name">Full Names <small style="color:red">*</small></label>
+                                <input type="text" id="template-contactform-name" asp-for="FullName" class="sm-form-control required" required />
+                            </div>
+
+                            <div class="col-md-12 form-group">
+                                <label for="template-contactform-subject">Company Name  <small style="color:red">*</small></label>
+                                <input type="text" id="template-contactform-subject" asp-for="CompanyName" class="required sm-form-control" />
+                            </div>
+
+                            <div class="col-md-12 form-group">
+                                <label for="template-contactform-subject">Address <small style="color:red">*</small></label>
+                                <input type="text" id="template-contactform-subject" asp-for="Address" class="required sm-form-control" />
+                            </div>
+
+                            <div class="w-100"></div>
+
+                            <div class="col-md-12 form-group">
+                                <label for="template-contactform-email">Email Address <small style="color:red">*</small></label>
+                                <input type="email" id="template-contactform-email" asp-for="EmailAddress" class="required email sm-form-control" required />
+                            </div>
+
+                            <div class="col-md-12 form-group">
+                                <label for="template-contactform-phone">Phone Number <small style="color:red">*</small></label>
+                                <input type="text" id="template-contactform-phone" asp-for="PhoneNumber" class="sm-form-control required" required />
+                            </div>
+
+                            <div class="w-100"></div>
+
+
+
+                            <div class="col-md-4 form-group">
+                                <label for="template-contactform-service">Support Call Type <small style="color:red">*</small></label>
+                                <div class="vl">
+                                    <select id="selectBooth" asp-for="SupportType" asp-items="@Html.GetEnumSelectList<SupportType>()" required>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="w-100"></div>
+
+
+
+
+
+
+
+                            <div class="col-12 form-group">
+                                <label for="template-contactform-message">Message <small style="color:red">*</small></label>
+                                <textarea class="required sm-form-control" id="template-contactform-message" asp-for="Message" rows="8" cols="30"></textarea>
+                            </div>
+
+                            <div class="col-12 form-group">
+                                <button class="button button-3d m-0" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Send Message</button>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
